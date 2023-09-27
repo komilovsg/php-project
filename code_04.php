@@ -42,3 +42,27 @@ if ($s < 45) echo "bronze", "\n";
 elseif ($s < 75) echo "silver", "\n"; 
 elseif ($s < 175) echo "gold", "\n"; 
 else echo "VIP", "\n"; 
+
+
+$role = 'admin';
+
+switch ($role) {
+    case 'moderator':
+        echo "change only text and comment", "\n";
+        break;
+    case 'admin':
+        echo "total controle", "\n";
+        break;
+    case 'user':
+        echo "write comments", "\n";
+        break;
+    default:
+    echo "roule not found", "/n";
+}
+
+$resulte = 5;
+$res;
+
+$res = ($resulte === 5 ) ? 100 : 200 ;
+
+echo $res, "\n";
